@@ -9,7 +9,7 @@ contract MyAssertion {
    
     // x must never be 1!
     
-    assert(x != 1);
+    assert(x != 1337);
   }    
 
   // MythX-style assertion
@@ -18,8 +18,8 @@ contract MyAssertion {
       
     // x must never be 1!
       
-    if (x == 1) {
-        emit AssertionFailed("x is 1");        
+    if (x == 1337) {
+        emit AssertionFailed("x is 1337");        
     }
 
   }
