@@ -1,9 +1,9 @@
 pragma solidity 0.5.11;
 
 contract FooToken {
-  uint256 private _totalSupply;
-  mapping (address => uint256) private _balances;
-  mapping (address => mapping (address => uint256)) private _allowances;
+  uint256 internal _totalSupply;
+  mapping (address => uint256) internal _balances;
+  mapping (address => mapping (address => uint256)) internal _allowances;
 
   constructor() public {
     _totalSupply = 1000000;
