@@ -6,7 +6,7 @@ import "Gazillion.sol";
 
 contract VerifyGazillion is challenge1 {
     
-    function _buy() public payable {
+    function buy() public payable {
 
         uint256 initial_balance = balance;
 
@@ -17,7 +17,7 @@ contract VerifyGazillion is challenge1 {
         assert(balance >= initial_balance);
     }
     
-    function _burn(uint256 amount) public {
+    function burn(uint256 amount) public {
 
         uint256 initial_balance = balance;
 
